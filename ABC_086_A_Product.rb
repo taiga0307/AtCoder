@@ -5,9 +5,7 @@
 # 1≤a,b≤100001≤a,b≤10000
 # aa, bb は整数
 
-a = gets.to_i # 指定された入力値を受け取る。
-b = gets.to_i # 指定された入力値を受け取る。
-# 上記他記述例：a,b = gets.chomp.split.map(&:to_i);
+a,b = gets.chomp.split.map(&:to_i); # 指定された入力値を受け取る。
 
 if a * b % 2 == 0 # if文を使ってa×bが2で割り切れるかどうかを判定。
   puts "Even"
